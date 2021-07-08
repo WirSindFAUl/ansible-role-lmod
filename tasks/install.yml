@@ -22,9 +22,6 @@
     --with-module-root-path={{ lmod_module_root_path }}
     --with-spiderCacheDir={{ lmod_spider_cache_dir }}
     --with-updateSystemFn={{ lmod_spider_cache_stamp_file }}
-    --with-lua={{ lmod_lua_interpreter }}
-    --with-luac={{ lmod_luac_interpreter }}
-    &&
     make install
   args:
     chdir: '{{ lmod_source_path }}'
