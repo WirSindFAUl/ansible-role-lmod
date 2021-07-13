@@ -3,5 +3,7 @@
 - name: install lmod build dependencies
   yum:
     pkg: gcc
+  notify:
+    - remove build-deps
 
 ...
