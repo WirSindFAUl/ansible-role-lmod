@@ -2,11 +2,6 @@
 
 - name: install build dependencies
   include_tasks: 'build-deps-{{ ansible_os_family | lower }}.yml'
-  handlers:
-    - name: remove build-deps
-      yum:
-        name: gcc
-        state: absent
 
 - name: download lmod source tarball
   get_url:
